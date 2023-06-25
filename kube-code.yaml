@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: code-pod
+spec:
+   containers:
+    - name: code-container
+      image: fezf/kube-code:latest
+      ports:
+        - containerPort: 3000
+      imagePullPolicy: Always
